@@ -1,24 +1,20 @@
 <script lang="ts">
   import '../app.css';
   import { page } from '$app/stores'
-  import { base } from '$app/paths'
+  import ThemeToggle from '$lib/ThemeToggle.svelte'
 
-  const pages = ['home', 'about', 'projects', 'muses'];
+  const pages = ['home', 'about', 'projects', 'muses']
 
+  let { children } = $props()
   let pathname = $derived($page.url.pathname)
   let currentPage = $derived(pathname === '/' ? 'home' : pathname.split('/')[1])
-  let { children } = $props()
 
   function getPageHref(page: string) {
-    return page === 'home' ? base || '/' : `${base}/${page}`;
+    return page === 'home' ? '/' : `/${page}`
   }
-
-  $effect(() => {
-    console.log('Current page:', currentPage);
-  });
 </script>
 
-<div class="flex min-h-screen flex-col">
+<div class="flex h-dvh flex-col sm:h-full sm:min-h-screen" id="root">
   <header>
     <nav class="text-sm">
       <ul class="flex justify-evenly sm:divide-x-[.33px] sm:border-b-[.33px]">
@@ -26,7 +22,7 @@
           <li class="grow transition duration-300 sm:hover:underline">
             <a
               href={getPageHref(page)}
-              class="flex justify-center underline-offset-4 py-3 font-light tracking-wide hover:underline sm:hover:no-underline"
+              class="flex justify-center py-3 font-light tracking-wide underline-offset-4 hover:underline sm:hover:no-underline"
               class:underline={page === currentPage}
               class:sm:bg-foreground={page === currentPage}
               class:sm:text-background={page === currentPage}
@@ -47,8 +43,7 @@
     <a href="https://x.com/cgarciamoran" target="_blank" rel="noopener noreferrer" class="underline">X</a>
     <a href="https://linkedin.com/in/carlos-garcia-moran" target="_blank" rel="noopener noreferrer" class="underline">LinkedIn</a>
     <div class="fixed right-[7px] bottom-2.5 lg:right-6 lg:bottom-4">
-      <!-- Placeholder for theme toggle. You'll need to implement this separately -->
-      <button>T</button>
+      <ThemeToggle />
     </div>
   </footer>
 </div>
