@@ -1,7 +1,7 @@
 <script lang="ts">
   import '../app.css';
   import { page } from '$app/stores'
-  import ThemeToggle from '$lib/ThemeToggle.svelte'
+  import ThemeToggle from '$lib/components/ThemeToggle.svelte'
 
   const pages = ['home', 'about', 'projects', 'muses']
 
