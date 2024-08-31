@@ -4,16 +4,18 @@ export type Book = {
   title: string
   author: string
 }
-export const books: Record<string, Book[]> = {
+export const books = {
   now: [
     { title: 'Jony Ive', author: 'Leander Kahney' },
     { title: 'Thinking in Systems: A Primer', author: 'Donella H. Meadows' },
+  ],
+  unfinished: [
     {
       title: 'Zero: The Biography of a Dangerous Idea',
       author: 'Charles Seife',
     },
-    { title: 'The Black Swan', author: 'Nassim Nicholas Taleb' },
     { title: 'The Secret Garden', author: 'Frances Hodgson Burnett' },
+    { title: 'The Black Swan', author: 'Nassim Nicholas Taleb' },
   ],
   philosophy: [
     { title: 'Meditaciones', author: 'Marco Aurelio' },

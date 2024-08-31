@@ -38,4 +38,8 @@
       hsl(var(--gradient-end)) 20%
     );
   }
+
+  .section-title {
+    @apply mb-1 font-extralight text-lg sm:text-xl;
+  }
 }

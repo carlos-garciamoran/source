@@ -42,7 +42,7 @@
     <a href="https://github.com/carlos-garciamoran" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>
     <a href="https://x.com/cgarciamoran" target="_blank" rel="noopener noreferrer" class="underline">X</a>
     <a href="https://linkedin.com/in/carlos-garcia-moran" target="_blank" rel="noopener noreferrer" class="underline">LinkedIn</a>
-    <div class="fixed right-[7px] bottom-2.5 lg:right-6 lg:bottom-4">
+    <div class="fixed right-[7px] bottom-2.5 sm:right-4 sm:bottom-4">
       <ThemeToggle />
     </div>
   </footer>

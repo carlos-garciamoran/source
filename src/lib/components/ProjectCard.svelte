@@ -6,6 +6,7 @@
   const { name, tags, description, url } = project
   const isExternal = url !== '#'
 
+  // TODO: use classes instead. Using JS for this is overkill.
   $: cardClass = `border group flex animate-mutate-border cursor-default flex-col justify-center rounded-md bg-gradient-to-b bg-transparent from-neutral-200 to-neutral-50 p-6 transition delay-75 duration-200 ease-in-out sm:h-52 sm:p-8 lg:p-10 xl:h-[calc((100dvh-48px-68px-32px-6px)/3)] xl:px-12 2xl:px-14 dark:from-[hsl(0,0%,5%)] dark:to-[hsl(0,0%,3%)] ${getHoverClass(name)}`;
 
   function getHoverClass(name: string) {

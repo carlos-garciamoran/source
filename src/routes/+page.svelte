@@ -19,7 +19,7 @@
     <img
       alt="Me"
       src="/yo.webp"
-      class="h-auto w-[4.9rem] rounded-tl-[2rem] shadow-lg transition-all duration-300 ease-in sm:w-[6.5rem] md:w-36"
+      class="h-auto w-[4.9rem] rounded-tl-[2rem] sm:rounded-tl-[3rem] shadow-lg transition-all duration-300 ease-in sm:w-[6.5rem] md:w-36"
       width="300"
       height="300"
     />
