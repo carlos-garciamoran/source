@@ -6,14 +6,12 @@ export type Book = {
 }
 export const books = {
   now: [
-    { title: 'Jony Ive', author: 'Leander Kahney' },
+    { title: 'Four Thousand Weeks', author: 'Oliver Burkeman' },
     { title: 'Thinking in Systems: A Primer', author: 'Donella H. Meadows' },
+    { title: 'Jony Ive', author: 'Leander Kahney' },
   ],
   unfinished: [
-    {
-      title: 'Zero: The Biography of a Dangerous Idea',
-      author: 'Charles Seife',
-    },
+    { title: 'Zero: The Biography of a Dangerous Idea', author: 'Charles Seife' },
     { title: 'The Secret Garden', author: 'Frances Hodgson Burnett' },
     { title: 'The Black Swan', author: 'Nassim Nicholas Taleb' },
   ],
@@ -124,7 +122,7 @@ export const projects: Project[] = [
   {
     name: 'stealth',
     description: 'working on something new...',
-    url: 'mailto:carlos@twilight.so?subject=site',
+    url: '#',
     tags: [],
   },
   {

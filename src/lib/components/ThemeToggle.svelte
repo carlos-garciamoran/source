@@ -17,7 +17,7 @@
   onMount(() => {
     const storedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     isDarkMode = storedTheme === 'dark' || (storedTheme === null && prefersDark);
     updateColorScheme()
   });
@@ -37,7 +37,7 @@
   }
 
   .sun-icon {
-    filter: invert(70%) sepia(74%) saturate(1115%) hue-rotate(359deg) brightness(105%) contrast(102%);
+    filter: invert(70%) sepia(74%) saturate(1115%) hue-rotate(350deg) brightness(105%) contrast(102%);
   }
 
   .moon-icon {

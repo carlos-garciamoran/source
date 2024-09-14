@@ -19,20 +19,20 @@
     <img
       alt="Me"
       src="/yo.webp"
-      class="h-auto w-[4.9rem] rounded-tl-[2rem] sm:rounded-tl-[3rem] shadow-lg transition-all duration-300 ease-in sm:w-[6.5rem] md:w-36"
+      class="h-auto w-[4.9rem] rounded-t-[10rem] shadow-lg transition-all duration-300 ease-in sm:w-[6.5rem] md:w-36"
       width="300"
       height="300"
     />
     <div>
       {#if mounted}
-        <div in:fade="{{ duration: 500, delay: 300 }}" class="-mt-1 sm:-mt-1.5 font-thin text-[40px] leading-tight tracking-tighter first-line:leading-none sm:text-[50px] md:text-7xl">
+        <div in:fade="{{ duration: 500, delay: 300 }}" class="-mt-1 sm:-mt-1.5 font-thin text-[40px] leading-tight tracking-tight first-line:leading-none sm:text-[50px] md:text-7xl">
           <p>Hi, my name</p>
           <p class="mt-0.5 sm:mt-2 md:mt-3.5">
-            is <span class="font-extrabold tracking-tighter">Carlos</span>
+            is <span class="font-extrabold tracking-tight">Carlos</span>
           </p>
         </div>
         <p in:fade="{{ duration: 700, delay: 500 }}" class="mt-3 font-extralight text-sm sm:mt-6 sm:text-base sm:tracking-wide">
-          I'm into <span class="font-medium">design</span> &{' '}
+          I like <span class="font-medium">designing</span> &{' '}
           <span class="font-medium">building software</span>
         </p>
       {/if}

@@ -4,7 +4,7 @@
 </svelte:head>
 
 <div class="mx-auto flex w-full max-w-[600px] cursor-default px-6 py-5 font-light transition-all duration-500 sm:pt-6 md:max-w-screen-sm md:items-center md:py-0">
-  <div class="flex flex-col gap-4 hyphens-auto text-justify text-sm transition-[padding] duration-500 sm:text-base md:border md:p-10">
+  <div class="flex flex-col gap-5 hyphens-auto text-justify text-sm transition-[padding] duration-500 sm:text-[0.94rem]/[1.5rem] md:border md:p-10">
     <p class="text-sm">TL;DR obsessing over building things 0-1</p>
     <p>
       I was born and raised in Madrid, Spain. In my early teens, I developed a curiosity for

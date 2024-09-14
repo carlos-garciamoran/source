@@ -39,9 +39,9 @@
     {@render children()}
   </main>
   <footer class="flex justify-center gap-6 pb-3.5 text-center font-extralight text-xs underline-offset-2 sm:text-sm md:pb-6">
-    <a href="https://github.com/carlos-garciamoran" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>
-    <a href="https://x.com/cgarciamoran" target="_blank" rel="noopener noreferrer" class="underline">X</a>
-    <a href="https://linkedin.com/in/carlos-garcia-moran" target="_blank" rel="noopener noreferrer" class="underline">LinkedIn</a>
+    <a target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground hover:underline" href="https://github.com/carlos-garciamoran">GitHub</a>
+    <a target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground hover:underline" href="https://x.com/cgarciamoran">X</a>
+    <a target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground hover:underline" href="https://linkedin.com/in/carlos-garcia-moran">LinkedIn</a>
     <div class="fixed right-[7px] bottom-2.5 sm:right-4 sm:bottom-4">
       <ThemeToggle />
     </div>
